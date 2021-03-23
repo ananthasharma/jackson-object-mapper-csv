@@ -1,0 +1,13 @@
+package com.aps.apps.democsvwriter;
+
+import lombok.Builder;
+import lombok.Data;
+import lombok.With;
+
+@Data
+@Builder
+@With
+public class DummyPojo {
+    private Integer id;
+    private String name;
+}
