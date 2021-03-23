@@ -13,6 +13,12 @@ import java.io.IOException;
 import java.io.StringWriter;
 import java.util.UUID;
 
+/**
+ *
+ * sample appliction which writes a java PoJo object as csv
+ *
+ * @author asharma
+ */
 @Slf4j
 @SpringBootApplication
 public class DemoCsvWriterApplication {
@@ -21,6 +27,10 @@ public class DemoCsvWriterApplication {
         SpringApplication.run(DemoCsvWriterApplication.class, args);
     }
 
+    /**
+     * method that does the deed
+     * @throws IOException
+     */
     @PostConstruct
     public void createSampleCsv() throws IOException {
         log.info("printing sample csv");
